@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        background-color: rgb(155, 211, 246);
+        border-color: black;
+        width: 380px;
+    }
+
+    .gbr {
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+    }
+
+    .hover:hover {
+        background-color: chartreuse;
+    }
+</style>
+
+<script>
+    function usia() {
+        let u = document.getElementById("usia").innerHTML;
+        document.querySelector("img").src = "https://i.pinimg.com/736x/cb/6d/b2/cb6db235fa43c48b088d2db2ab715e55.jpg";
+        alert("Usia saya adalah " + u + " tahun.")
+    }
+</script>
+<body>
+    <h2>Contoh Title</h2>
+    <ol>
+        <li>Mobil</li>
+        <ol type="i">
+            <li>Avanza</li>
+            <li>Xenia</li>
+            <li>Pajero</li>
+        </ol>
+        <li>Mobil</li>
+        <ul type="square">
+            <li>Avanza</li>
+            <li>Xenia</li>
+            <li>Pajero</li>
+        </ul>
+        <li>Mobil</li>
+        <ol type="a">
+            <li>Avanza</li>
+            <li>Xenia</li>
+            <li>Pajero</li>
+        </ol>
+    </ol><hr>
+
+    <table border="1">
+        <tr>
+            <th colspan="3">Biodata Mahasiswa</th>
+        </tr>
+        <tr class="hover">
+            <td>Nama</td>
+            <td>Ayanokouji kiyotaka</td>
+            <td rowspan="5"><img class="gbr" onclick="usia()" src="https://i.pinimg.com/736x/4d/09/f5/4d09f59689e7cce8d16d225e1bd423bd.jpg"></td>
+        </tr>
+        <tr class="hover">
+            <td>NPM</td>
+            <td>230202041</td>
+        </tr>
+        <tr class="hover">
+            <td>Kelas</td>
+            <td>TI-1B</td>
+        </tr>
+        <tr class="hover">
+            <td>Usia</td>
+            <td id="usia">18</td>
+        </tr>
+        <tr class="hover">
+            <td>No.HP</td>
+            <td>081515153241</td>
+        </tr>
+    </table>
+</body>
+</html>
